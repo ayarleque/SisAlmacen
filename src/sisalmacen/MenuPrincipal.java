@@ -27,10 +27,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jMenuBar2 = new javax.swing.JMenuBar();
-        jMenu14 = new javax.swing.JMenu();
-        jMenuItem4 = new javax.swing.JMenuItem();
-        jMenu15 = new javax.swing.JMenu();
+        panelContenedor = new javax.swing.JPanel();
         PanelMenu = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
         jLabel4 = new javax.swing.JLabel();
@@ -38,7 +35,6 @@ public class MenuPrincipal extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
         jPanel4 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
-        panelContenedor = new javax.swing.JPanel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenu5 = new javax.swing.JMenu();
@@ -80,26 +76,24 @@ public class MenuPrincipal extends javax.swing.JFrame {
         jMenu3 = new javax.swing.JMenu();
         jMenu4 = new javax.swing.JMenu();
 
-        jMenu14.setText("File");
-
-        jMenuItem4.setText("jMenuItem4");
-        jMenuItem4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem4ActionPerformed(evt);
-            }
-        });
-        jMenu14.add(jMenuItem4);
-
-        jMenuBar2.add(jMenu14);
-
-        jMenu15.setText("Edit");
-        jMenuBar2.add(jMenu15);
-
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        PanelMenu.setBackground(new java.awt.Color(0, 153, 0));
+        panelContenedor.setBackground(new java.awt.Color(252, 253, 242));
 
-        jPanel2.setBackground(new java.awt.Color(0, 153, 0));
+        javax.swing.GroupLayout panelContenedorLayout = new javax.swing.GroupLayout(panelContenedor);
+        panelContenedor.setLayout(panelContenedorLayout);
+        panelContenedorLayout.setHorizontalGroup(
+            panelContenedorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 957, Short.MAX_VALUE)
+        );
+        panelContenedorLayout.setVerticalGroup(
+            panelContenedorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 543, Short.MAX_VALUE)
+        );
+
+        PanelMenu.setBackground(new java.awt.Color(153, 153, 153));
+
+        jPanel2.setBackground(new java.awt.Color(153, 153, 153));
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
@@ -122,7 +116,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jPanel3.setBackground(new java.awt.Color(0, 153, 0));
+        jPanel3.setBackground(new java.awt.Color(153, 153, 153));
         jPanel3.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
@@ -146,7 +140,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        jPanel4.setBackground(new java.awt.Color(0, 153, 0));
+        jPanel4.setBackground(new java.awt.Color(153, 153, 153));
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
@@ -187,30 +181,24 @@ public class MenuPrincipal extends javax.swing.JFrame {
             .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
-        javax.swing.GroupLayout panelContenedorLayout = new javax.swing.GroupLayout(panelContenedor);
-        panelContenedor.setLayout(panelContenedorLayout);
-        panelContenedorLayout.setHorizontalGroup(
-            panelContenedorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 957, Short.MAX_VALUE)
-        );
-        panelContenedorLayout.setVerticalGroup(
-            panelContenedorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 498, Short.MAX_VALUE)
-        );
+        jMenuBar1.setBackground(new java.awt.Color(0, 102, 0));
+        jMenuBar1.setBorder(null);
+        jMenuBar1.setForeground(new java.awt.Color(0, 102, 0));
 
-        jMenuBar1.setBackground(new java.awt.Color(51, 255, 51));
-
+        jMenu1.setBackground(new java.awt.Color(0, 153, 0));
         jMenu1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jMenu1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/maestro.png"))); // NOI18N
         jMenu1.setText("Maestro");
-        jMenu1.setFont(new java.awt.Font("Segoe UI", 3, 15)); // NOI18N
+        jMenu1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        jMenu1.setDebugGraphicsOptions(javax.swing.DebugGraphics.NONE_OPTION);
+        jMenu1.setFont(new java.awt.Font("Poetsen One", 0, 16)); // NOI18N
 
         jMenu5.setBackground(new java.awt.Color(255, 255, 204));
         jMenu5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/RegistroProd.png"))); // NOI18N
         jMenu5.setText("Producto");
-        jMenu5.setFont(new java.awt.Font("Segoe UI", 3, 13)); // NOI18N
+        jMenu5.setFont(new java.awt.Font("Poetsen One", 0, 13)); // NOI18N
 
-        jMenuItem8.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
+        jMenuItem8.setFont(new java.awt.Font("Poetsen One", 0, 12)); // NOI18N
         jMenuItem8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/ingresar.png"))); // NOI18N
         jMenuItem8.setText("Nuevo");
         jMenuItem8.addActionListener(new java.awt.event.ActionListener() {
@@ -220,12 +208,12 @@ public class MenuPrincipal extends javax.swing.JFrame {
         });
         jMenu5.add(jMenuItem8);
 
-        jMenuItem9.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
+        jMenuItem9.setFont(new java.awt.Font("Poetsen One", 0, 12)); // NOI18N
         jMenuItem9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/modificar.png"))); // NOI18N
         jMenuItem9.setText("Modificar");
         jMenu5.add(jMenuItem9);
 
-        jMenuItem10.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
+        jMenuItem10.setFont(new java.awt.Font("Poetsen One", 0, 12)); // NOI18N
         jMenuItem10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/eliminar.png"))); // NOI18N
         jMenuItem10.setText("Eliminar");
         jMenu5.add(jMenuItem10);
@@ -234,19 +222,19 @@ public class MenuPrincipal extends javax.swing.JFrame {
 
         jMenu6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/categoria.png"))); // NOI18N
         jMenu6.setText("Categoría Prod.");
-        jMenu6.setFont(new java.awt.Font("Segoe UI", 3, 13)); // NOI18N
+        jMenu6.setFont(new java.awt.Font("Poetsen One", 0, 13)); // NOI18N
 
-        jMenuItem11.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
+        jMenuItem11.setFont(new java.awt.Font("Poetsen One", 0, 12)); // NOI18N
         jMenuItem11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/ingresar.png"))); // NOI18N
         jMenuItem11.setText("Nuevo");
         jMenu6.add(jMenuItem11);
 
-        jMenuItem12.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
+        jMenuItem12.setFont(new java.awt.Font("Poetsen One", 0, 12)); // NOI18N
         jMenuItem12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/eliminar.png"))); // NOI18N
         jMenuItem12.setText("Eliminar");
         jMenu6.add(jMenuItem12);
 
-        jMenuItem13.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
+        jMenuItem13.setFont(new java.awt.Font("Poetsen One", 0, 12)); // NOI18N
         jMenuItem13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/modificar.png"))); // NOI18N
         jMenuItem13.setText("Modificar");
         jMenu6.add(jMenuItem13);
@@ -255,19 +243,19 @@ public class MenuPrincipal extends javax.swing.JFrame {
 
         jMenu7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/marca.png"))); // NOI18N
         jMenu7.setText("Marca Prod.");
-        jMenu7.setFont(new java.awt.Font("Segoe UI", 3, 13)); // NOI18N
+        jMenu7.setFont(new java.awt.Font("Poetsen One", 0, 13)); // NOI18N
 
-        jMenuItem14.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
+        jMenuItem14.setFont(new java.awt.Font("Poetsen One", 0, 12)); // NOI18N
         jMenuItem14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/ingresar.png"))); // NOI18N
         jMenuItem14.setText("Nuevo");
         jMenu7.add(jMenuItem14);
 
-        jMenuItem15.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
+        jMenuItem15.setFont(new java.awt.Font("Poetsen One", 0, 12)); // NOI18N
         jMenuItem15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/eliminar.png"))); // NOI18N
         jMenuItem15.setText("Eliminar");
         jMenu7.add(jMenuItem15);
 
-        jMenuItem16.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
+        jMenuItem16.setFont(new java.awt.Font("Poetsen One", 0, 12)); // NOI18N
         jMenuItem16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/modificar.png"))); // NOI18N
         jMenuItem16.setText("Modificar");
         jMenu7.add(jMenuItem16);
@@ -276,19 +264,19 @@ public class MenuPrincipal extends javax.swing.JFrame {
 
         jMenu8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/proveedor.png"))); // NOI18N
         jMenu8.setText("Proveedor");
-        jMenu8.setFont(new java.awt.Font("Segoe UI", 3, 13)); // NOI18N
+        jMenu8.setFont(new java.awt.Font("Poetsen One", 0, 13)); // NOI18N
 
-        jMenuItem17.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
+        jMenuItem17.setFont(new java.awt.Font("Poetsen One", 0, 12)); // NOI18N
         jMenuItem17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/ingresar.png"))); // NOI18N
         jMenuItem17.setText("Nuevo");
         jMenu8.add(jMenuItem17);
 
-        jMenuItem18.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
+        jMenuItem18.setFont(new java.awt.Font("Poetsen One", 0, 12)); // NOI18N
         jMenuItem18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/eliminar.png"))); // NOI18N
         jMenuItem18.setText("Eliminar");
         jMenu8.add(jMenuItem18);
 
-        jMenuItem19.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
+        jMenuItem19.setFont(new java.awt.Font("Poetsen One", 0, 12)); // NOI18N
         jMenuItem19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/modificar.png"))); // NOI18N
         jMenuItem19.setText("Modificar");
         jMenu8.add(jMenuItem19);
@@ -297,19 +285,19 @@ public class MenuPrincipal extends javax.swing.JFrame {
 
         jMenu9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/trabajador.png"))); // NOI18N
         jMenu9.setText("Trabajador");
-        jMenu9.setFont(new java.awt.Font("Segoe UI", 3, 13)); // NOI18N
+        jMenu9.setFont(new java.awt.Font("Poetsen One", 0, 13)); // NOI18N
 
-        jMenuItem20.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
+        jMenuItem20.setFont(new java.awt.Font("Poetsen One", 0, 12)); // NOI18N
         jMenuItem20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/ingresar.png"))); // NOI18N
         jMenuItem20.setText("Nuevo");
         jMenu9.add(jMenuItem20);
 
-        jMenuItem21.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
+        jMenuItem21.setFont(new java.awt.Font("Poetsen One", 0, 12)); // NOI18N
         jMenuItem21.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/eliminar.png"))); // NOI18N
         jMenuItem21.setText("Eliminar");
         jMenu9.add(jMenuItem21);
 
-        jMenuItem22.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
+        jMenuItem22.setFont(new java.awt.Font("Poetsen One", 0, 12)); // NOI18N
         jMenuItem22.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/modificar.png"))); // NOI18N
         jMenuItem22.setText("Modificar");
         jMenu9.add(jMenuItem22);
@@ -318,19 +306,19 @@ public class MenuPrincipal extends javax.swing.JFrame {
 
         jMenu10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/usuarios.png"))); // NOI18N
         jMenu10.setText("Usuario");
-        jMenu10.setFont(new java.awt.Font("Segoe UI", 3, 13)); // NOI18N
+        jMenu10.setFont(new java.awt.Font("Poetsen One", 0, 13)); // NOI18N
 
-        jMenuItem23.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
+        jMenuItem23.setFont(new java.awt.Font("Poetsen One", 0, 12)); // NOI18N
         jMenuItem23.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/ingresar.png"))); // NOI18N
         jMenuItem23.setText("Nuevo");
         jMenu10.add(jMenuItem23);
 
-        jMenuItem24.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
+        jMenuItem24.setFont(new java.awt.Font("Poetsen One", 0, 12)); // NOI18N
         jMenuItem24.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/eliminar.png"))); // NOI18N
         jMenuItem24.setText("Eliminar");
         jMenu10.add(jMenuItem24);
 
-        jMenuItem25.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
+        jMenuItem25.setFont(new java.awt.Font("Poetsen One", 0, 12)); // NOI18N
         jMenuItem25.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/modificar.png"))); // NOI18N
         jMenuItem25.setText("Modificar");
         jMenu10.add(jMenuItem25);
@@ -339,19 +327,19 @@ public class MenuPrincipal extends javax.swing.JFrame {
 
         jMenu11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/almacen.png"))); // NOI18N
         jMenu11.setText("Almacén");
-        jMenu11.setFont(new java.awt.Font("Segoe UI", 3, 13)); // NOI18N
+        jMenu11.setFont(new java.awt.Font("Poetsen One", 0, 13)); // NOI18N
 
-        jMenuItem26.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
+        jMenuItem26.setFont(new java.awt.Font("Poetsen One", 0, 12)); // NOI18N
         jMenuItem26.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/ingresar.png"))); // NOI18N
         jMenuItem26.setText("Nuevo");
         jMenu11.add(jMenuItem26);
 
-        jMenuItem27.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
+        jMenuItem27.setFont(new java.awt.Font("Poetsen One", 0, 12)); // NOI18N
         jMenuItem27.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/eliminar.png"))); // NOI18N
         jMenuItem27.setText("Eliminar");
         jMenu11.add(jMenuItem27);
 
-        jMenuItem28.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
+        jMenuItem28.setFont(new java.awt.Font("Poetsen One", 0, 12)); // NOI18N
         jMenuItem28.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/modificar.png"))); // NOI18N
         jMenuItem28.setText("Modificar");
         jMenu11.add(jMenuItem28);
@@ -362,35 +350,36 @@ public class MenuPrincipal extends javax.swing.JFrame {
 
         jMenu2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/gestiones.png"))); // NOI18N
         jMenu2.setText("Gestiones");
-        jMenu2.setFont(new java.awt.Font("Segoe UI", 3, 15)); // NOI18N
+        jMenu2.setDebugGraphicsOptions(javax.swing.DebugGraphics.NONE_OPTION);
+        jMenu2.setFont(new java.awt.Font("Poetsen One", 0, 16)); // NOI18N
 
         jMenu12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/pedido.png"))); // NOI18N
         jMenu12.setText("Pedido");
-        jMenu12.setFont(new java.awt.Font("Segoe UI", 3, 13)); // NOI18N
+        jMenu12.setFont(new java.awt.Font("Poetsen One", 0, 13)); // NOI18N
 
-        jMenuItem29.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
+        jMenuItem29.setFont(new java.awt.Font("Poetsen One", 0, 12)); // NOI18N
         jMenuItem29.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/ingresar.png"))); // NOI18N
         jMenuItem29.setText("Nuevo");
         jMenu12.add(jMenuItem29);
 
-        jMenuItem2.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
+        jMenuItem2.setFont(new java.awt.Font("Poetsen One", 0, 12)); // NOI18N
         jMenuItem2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/validaPedido.png"))); // NOI18N
         jMenuItem2.setText("Validar");
         jMenu12.add(jMenuItem2);
 
         jMenu2.add(jMenu12);
 
-        jMenuItem1.setFont(new java.awt.Font("Segoe UI", 3, 13)); // NOI18N
+        jMenuItem1.setFont(new java.awt.Font("Poetsen One", 0, 13)); // NOI18N
         jMenuItem1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/validarCompra.png"))); // NOI18N
         jMenuItem1.setText("Validar Compra");
         jMenu2.add(jMenuItem1);
 
         jMenu13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/nuevoPedido.png"))); // NOI18N
         jMenu13.setText("Mov. Producto");
-        jMenu13.setFont(new java.awt.Font("Segoe UI", 3, 13)); // NOI18N
+        jMenu13.setFont(new java.awt.Font("Poetsen One", 0, 13)); // NOI18N
 
         jMenuItem3.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_R, java.awt.event.InputEvent.CTRL_MASK));
-        jMenuItem3.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
+        jMenuItem3.setFont(new java.awt.Font("Poetsen One", 0, 12)); // NOI18N
         jMenuItem3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/recepcionarProd.png"))); // NOI18N
         jMenuItem3.setText("Recepcionar");
         jMenuItem3.addActionListener(new java.awt.event.ActionListener() {
@@ -401,7 +390,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
         jMenu13.add(jMenuItem3);
 
         jMenuItem30.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_S, java.awt.event.InputEvent.CTRL_MASK));
-        jMenuItem30.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
+        jMenuItem30.setFont(new java.awt.Font("Poetsen One", 0, 12)); // NOI18N
         jMenuItem30.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/salidaProd.png"))); // NOI18N
         jMenuItem30.setText("Retirar");
         jMenu13.add(jMenuItem30);
@@ -412,12 +401,14 @@ public class MenuPrincipal extends javax.swing.JFrame {
 
         jMenu3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/reporte.png"))); // NOI18N
         jMenu3.setText("Reportes");
-        jMenu3.setFont(new java.awt.Font("Segoe UI", 3, 15)); // NOI18N
+        jMenu3.setDebugGraphicsOptions(javax.swing.DebugGraphics.NONE_OPTION);
+        jMenu3.setFont(new java.awt.Font("Poetsen One", 0, 16)); // NOI18N
         jMenuBar1.add(jMenu3);
 
         jMenu4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/inventario.png"))); // NOI18N
         jMenu4.setText("Inventario");
-        jMenu4.setFont(new java.awt.Font("Segoe UI", 3, 15)); // NOI18N
+        jMenu4.setDebugGraphicsOptions(javax.swing.DebugGraphics.NONE_OPTION);
+        jMenu4.setFont(new java.awt.Font("Poetsen One", 0, 16)); // NOI18N
         jMenuBar1.add(jMenu4);
 
         setJMenuBar(jMenuBar1);
@@ -443,10 +434,6 @@ public class MenuPrincipal extends javax.swing.JFrame {
     private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jMenuItem3ActionPerformed
-
-    private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem4ActionPerformed
-        jMenuBar1.setVisible(true);
-    }//GEN-LAST:event_jMenuItem4ActionPerformed
 
     private void jMenuItem8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem8ActionPerformed
         Paneles.PnlRegistrarProd ver=new Paneles.PnlRegistrarProd();
@@ -503,8 +490,6 @@ public class MenuPrincipal extends javax.swing.JFrame {
     private javax.swing.JMenu jMenu11;
     private javax.swing.JMenu jMenu12;
     private javax.swing.JMenu jMenu13;
-    private javax.swing.JMenu jMenu14;
-    private javax.swing.JMenu jMenu15;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
     private javax.swing.JMenu jMenu4;
@@ -514,7 +499,6 @@ public class MenuPrincipal extends javax.swing.JFrame {
     private javax.swing.JMenu jMenu8;
     private javax.swing.JMenu jMenu9;
     private javax.swing.JMenuBar jMenuBar1;
-    private javax.swing.JMenuBar jMenuBar2;
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem jMenuItem10;
     private javax.swing.JMenuItem jMenuItem11;
@@ -539,7 +523,6 @@ public class MenuPrincipal extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuItem29;
     private javax.swing.JMenuItem jMenuItem3;
     private javax.swing.JMenuItem jMenuItem30;
-    private javax.swing.JMenuItem jMenuItem4;
     private javax.swing.JMenuItem jMenuItem8;
     private javax.swing.JMenuItem jMenuItem9;
     private javax.swing.JPanel jPanel2;
